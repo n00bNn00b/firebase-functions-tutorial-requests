@@ -9,5 +9,11 @@ exports.randomNumber = functions.https.onRequest((request, response) => {
 
 // http request 2
 exports.toTheDojo = functions.https.onRequest((request, response) => {
-  response.redirect("https://www.thenetninja.co.uk");
+  response.redirect("https://realdewan.netlify.app/");
+});
+
+// http callable function
+exports.sayHello = functions.https.onCall((data, context) => {
+  const name = data.name;
+  return `hello ${name} :)`;
 });

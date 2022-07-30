@@ -107,3 +107,45 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+
+/* auth styles */
+.auth {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #fafafa;
+  display: none;
+  z-index: 1;
+}
+.auth.open {
+  display: block;
+}
+.auth a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.auth .modal {
+  display: none;
+}
+.auth .modal.active {
+  display: block;
+}
+
+/* notification */
+.notification {
+  width: 200px;
+  padding: 20px;
+  position: fixed;
+  left: 50%;
+  margin-left: -120px;
+  top: 0;
+  border-radius: 0 0 5px 5px;
+  background: #ec2d2d;
+  text-align: center;
+  color: #fff;
+  margin-top: -100%;
+  transition: all 0.4s;
+}
+.notification.active {
+  margin-top: 0;
+}
